@@ -1,8 +1,8 @@
+/*pagina principal*/
 
 .arriba
 {
-    background-image: url(https://connect-assets.prosple.com/cdn/ff/f-XOlG6N0oJWqMuiTkgk_uDYVS_IMBC0BGTOGh2u8qo/1656397250/public/2022-06/banner-nike-1786x642-2022.png);
-    background-repeat: no-repeat;
+    background-color: black;
     
 }
 .medio
@@ -12,61 +12,6 @@
 .abajo
 {
 Background-color:rgb(43, 42, 36);
-}
-
-.izq
-{
-Background-color:rgb(145, 145, 128);
-
-}
-
-.der
-{
-Background-color:rgb(145, 145, 128);
-
-}
-
-.med
-{
-    background-color: ;
-    
-}
-
-
-.links
-{
-    margin: 5px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:whitesmoke;
-    text-decoration: none;
-}
-
-
-nav
-{
-    padding: 5px;
-    font-size: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul
-{
-    justify-content: center;
-    display: flex;
-    list-style: none;
-    background-color:transparent;
-    width: 100%;
-    height: 20%;
-    
-}
-
-li
-{ 
-    background-color: rgba(128, 128, 128, 0.175);
-    border-radius: 15px;
-    
 }
 
 .articulo
@@ -85,22 +30,178 @@ li
     width: 200px;
 }
 
-header{
-    background-color:white;
-}
 
-main{
-    background-color: black;
-}
+/*Fin de pagina principal*/
+
+
+
+
+
+
 
 /*Incicio pagina 2 */
-.tarjeta{
-    height: 200px;
-    width: 125px;
+h1{
+    font-family:'Times New Roman', Times, serif ;
+    text-decoration: underline;
+    
+}
+header{
+    background-color: lightgreen;
+    color:black;
+    text-align:center;
+    padding: 20px;
+}
+
+nav
+{
+    background-color:aquamarine;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+}
+nav ul li   
+{
+    margin:0 10px;
+    font-size: 25px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,1);
     
 }
 
+nav a
+{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+.cuerpo
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    flex: 1;
+}
+
+.contenedorarriba{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    border: 3px solid red;
+    display: flex;
+}
+
+.izquierda{
+    height: 100%;
+    width: 30%;
+}
+
+.derecha
+{
+    padding-left: 50%;
+    justify-content: end;
+    display: flex;
+    height: 20%;
+    margin: 10px;
+}
+
+
+.botines{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.tarjeta
+{
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #cc8e8e;
+    color: #fff;
+}
+footer .icons
+{
+    display: flex;
+    gap: 50px;
+}
+
+footer .icons a
+{
+    display: flex;
+    align-items: center;
+}
+
+footer .icons img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+
+@media (max-width:550px){
+    nav ul 
+    {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav li
+    {
+        margin: 5px 0;
+    }
+
+    main
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .tarjeta
+    {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    footer{
+        padding: 15px 0;
+    }
+
+    footer .icons
+    {
+        gap: 10px;
+    }
+    footer .icons img{
+        width: 30px;
+        height: 30px;
+    }
+}
 
 
 /*  Deje el video de boostrap en el minuto 1:01:17 */
